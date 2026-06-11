@@ -3,6 +3,7 @@ import { home_services, IHomeService } from "@/static/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { IconType } from "react-icons";
 
 function ThirdServices() {
   return (
@@ -26,7 +27,7 @@ function ThirdServices() {
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-10 lg:gap-7 mt-15 mx-auto lg:max-w-[1200px] mobile-landscape:min-h-[420px]">
               {home_services.map((item: IHomeService) => {
-                const Icon = item.icon && item.icon;
+                const Icon = item.icon as IconType;
                 return item.icon ? (
                   <div
                     data-w-id="b2ae6e53-7f47-9f98-f81b-d5f4b5ba4704"
