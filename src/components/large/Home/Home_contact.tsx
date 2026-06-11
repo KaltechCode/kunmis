@@ -9,7 +9,7 @@ function Home_contact() {
       <div className="section-container  h-full">
         <div className="grid h-full gap-10 lg:grid-cols-2">
           {/* Form section*/}
-          <div className="bg-title rounded-medium lg:order-2 mb-10">
+          <div className="bg-title rounded-medium lg:order-2 pb-10">
             <div className="md:w-[65%] py-10 px-5">
               <p className="subtitle font-openSans justify-start! text-white!">
                 <span>
