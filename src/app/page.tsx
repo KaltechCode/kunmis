@@ -6,6 +6,7 @@ import Portfolio from "@/components/large/Home/Portfolio";
 import Blog from "@/components/large/Home/Blog";
 import Home_contact from "@/components/large/Home/Home_contact";
 import Herosection from "../components/large/Home/Herosection";
+import ProcessSection from "@/components/large/Home/Test";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Portfolio />
         <Home_contact />
         <Blog />
+        <ProcessSection />
       </main>
     </div>
   );

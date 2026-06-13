@@ -12,11 +12,14 @@ import { IoHome } from "react-icons/io5";
 import { RiScrollToBottomFill } from "react-icons/ri";
 
 export interface IHomeSteps {
+  number: string;
   id: string;
   title?: string;
   text: string;
   link?: string;
   label?: string;
+  left: number;
+  z: number;
 }
 export interface IHomeService {
   id: number;
@@ -50,24 +53,36 @@ export interface IServiceBox {
 export const home_steps: IHomeSteps[] = [
   {
     id: "01",
+    number: "01",
     title: "Book / Schedule",
     text: "Easily book your cleaning service online or by phone at your convenience.",
+    left: 0,
+    z: 10,
   },
   {
     id: "02",
+    number: "02",
     title: "Make Appointment",
     text: "Book your cleaning service quickly and easily online or by phone anytime.",
+    left: 300,
+    z: 20,
   },
   {
     id: "03",
+    number: "03",
     title: "Lets Clean Home",
     text: "Our trained staff use safe and effective methods to deliver spotless results.",
+    left: 600,
+    z: 20,
   },
   {
     id: "04",
+    number: "04",
     text: "Ready for a Spotless Home Today and Always?",
     link: "/contact-us",
     label: "Book Now",
+    left: 900,
+    z: 30,
   },
 ];
 
