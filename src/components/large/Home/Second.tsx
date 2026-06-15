@@ -5,6 +5,7 @@ import { home_steps, IHomeSteps } from "@/static/data";
 import { useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import EasyStepsSection from "./Test";
+import { motion } from "framer-motion";
 
 function Second() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -43,24 +44,35 @@ function Second() {
           <div className="flex  flex-col justify-center items-center h-full">
             {/* section tittle*/}
             <div className="">
-              <p className="subtitle">
+              <motion.p
+                className="subtitle"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.35 }}
+              >
                 <span>
                   <Iconstars />{" "}
                 </span>
                 HOW IT WORKS
-              </p>
-              <h2 className="section-title text-center font-instrument lg:w-[70%] mobile-landscape:w-[60%] mx-auto">
+              </motion.p>
+              <motion.h2
+                className="section-title text-center font-instrument lg:w-[70%] mobile-landscape:w-[60%] mx-auto"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
                 Effortless Cleaning in 3 Easy Steps!
-              </h2>
+              </motion.h2>
             </div>
 
             {/* boxes */}
             <div className="">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 md:gap-10 lg:gap-7 mt-15 lg:max-w-[1200px] mx-auto">
-                {home_steps.map((item: IHomeSteps) => {
+                {home_steps.map((item: IHomeSteps, key: number) => {
                   return (
                     <div
                       className={`how-it-works-card flex flex-col justify-between py-5  px-5  rounded-medium mobile-landscape:min-h-[290px] ${item.link ? "bg-background-black" : "bg-background-grey"}`}
+                      key={key}
                     >
                       <div className="how-it-works-icon-wrap">
                         <div className="big-number">

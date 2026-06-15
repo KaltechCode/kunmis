@@ -42,19 +42,18 @@ function Header() {
           >
             Services
           </Link>
-
-          <div className="group relative">
-            <button className="flex items-center gap-1 text-lg font-medium text-slate-600 hover:text-slate-900">
-              Pages
-              <IoChevronDownSharp className="h-4 w-4" />
-            </button>
-          </div>
-
           <Link
             href="/portfolio"
             className="text-lg font-medium text-slate-600 transition-colors hover:text-slate-900"
           >
             Portfolio
+          </Link>
+
+          <Link
+            href="/contact-us"
+            className="text-lg font-medium text-slate-600 transition-colors hover:text-slate-900"
+          >
+            Contact Us
           </Link>
         </nav>
 

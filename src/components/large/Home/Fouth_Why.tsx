@@ -1,7 +1,9 @@
+"use client";
 import PrimaryBtnBlack from "@/components/small/buttons/PrimaryBtnBlack";
 import Iconstars from "@/components/small/icons/Icon_stars";
 import { home_why, IHomeWhy } from "@/static/data";
 import React from "react";
+import { motion } from "framer-motion";
 
 function FouthWhy() {
   return (
@@ -10,21 +12,44 @@ function FouthWhy() {
         <div className="grid h-full lg:grid-cols-10 lg:gap-7 lg:max-w-[1200px] mx-auto">
           {/* section tittle*/}
           <div className="lg:col-span-4">
-            <p className="subtitle font-openSans justify-start!">
+            <motion.p
+              className="subtitle font-openSans justify-start!"
+              initial={{ scaleY: 0, opacity: 0.5 }}
+              whileInView={{ scaleY: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35 }}
+              style={{ transformOrigin: "bottom" }}
+            >
               <span>
                 <Iconstars />{" "}
               </span>
               WHY KUMIS CLEANERS
-            </p>
-            <h2 className="section-title text-left font-instrument">
+            </motion.p>
+            <motion.h2
+              className="section-title text-left font-instrument"
+              initial={{ scaleY: 0, opacity: 0.5 }}
+              whileInView={{ scaleY: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35 }}
+              style={{ transformOrigin: "bottom" }}
+            >
               Superior Cleaning, Expert-Level Shine
-            </h2>
+            </motion.h2>
 
-            <PrimaryBtnBlack
-              text="About Us"
-              link="/about"
-              size="py-4 px-8 mt-3"
-            />
+            <motion.div
+              className=""
+              initial={{ scaleY: 0, opacity: 0.5 }}
+              whileInView={{ scaleY: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35 }}
+              style={{ transformOrigin: "bottom" }}
+            >
+              <PrimaryBtnBlack
+                text="About Us"
+                link="/about"
+                size="py-4 px-8 mt-3"
+              />
+            </motion.div>
           </div>
 
           {/* boses */}

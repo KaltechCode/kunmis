@@ -19,7 +19,6 @@ export default function Home() {
         <Portfolio />
         <Home_contact />
         <Blog />
-        <ProcessSection />
       </main>
     </div>
   );

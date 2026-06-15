@@ -1,9 +1,11 @@
+"use client";
 import PrimaryBtnBlack from "@/components/small/buttons/PrimaryBtnBlack";
 import Iconstars from "@/components/small/icons/Icon_stars";
 import { home_blog, IHomePortfolio } from "@/static/data";
 import Image from "next/image";
 import Link from "next/link";
 import { CiCalendar } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 import React from "react";
 
@@ -15,15 +17,29 @@ export default function Blog() {
           {/* section tittle*/}
           <div className="md:flex md:justify-between md:items-end">
             <div className="md:w-[65%]">
-              <p className="subtitle font-openSans justify-start!">
+              <motion.p
+                className="subtitle font-openSans justify-start!"
+                initial={{ scaleY: 0, opacity: 0.5 }}
+                whileInView={{ scaleY: 1, opacity: 1 }}
+                transition={{ duration: 0.35 }}
+                viewport={{ once: true }}
+                style={{ transformOrigin: "bottom" }}
+              >
                 <span>
                   <Iconstars />{" "}
                 </span>
                 RECENT BLOGS
-              </p>
-              <h2 className="section-title text-left font-instrument">
+              </motion.p>
+              <motion.h2
+                className="section-title text-left font-instrument"
+                initial={{ scaleY: 0, opacity: 0.5 }}
+                whileInView={{ scaleY: 1, opacity: 1 }}
+                transition={{ duration: 0.35 }}
+                viewport={{ once: true }}
+                style={{ transformOrigin: "bottom" }}
+              >
                 Stay Updated With Our Recent Posts
-              </h2>
+              </motion.h2>
             </div>
 
             <PrimaryBtnBlack
@@ -40,15 +56,27 @@ export default function Blog() {
                 return (
                   <div key={key} className="lg:col-span-4 hover:scale-100">
                     <Link rel="stylesheet" href={item.link}>
-                      <div className="rounded-medium overflow-hidden">
-                        <Image
+                      <div className="rounded-medium overflow-hidden relative">
+                        <motion.img
                           src={item.image}
                           height={300}
                           width={300}
                           className="w-full h-auto"
                           alt={item.title}
-                          priority
+                          initial={{ scale: 1.3 }}
+                          whileInView={{ scale: 1 }}
+                          whileHover={{ scale: 1.5 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.5, duration: 0.35 }}
                         />
+                        <motion.div
+                          className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
+                          initial={{ scaleY: 1 }}
+                          whileInView={{ scaleY: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5 }}
+                          style={{ transformOrigin: "bottom" }}
+                        ></motion.div>
                       </div>
                       <div className="">
                         <p className="mt-2! subtitle justify-start! items-center text-title!">
