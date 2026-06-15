@@ -24,7 +24,7 @@ function First() {
           {/* boxes */}
           <div className="w-full mt-5 lg:max-w-[1200px] mx-auto  rounded-medium overflow-hidden">
             <Image
-              src={"/images/4.jpg"}
+              src={"/images/service-1.jpg"}
               alt="kunmis services"
               width={600}
               height={300}
