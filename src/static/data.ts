@@ -42,6 +42,14 @@ export interface IHomePortfolio {
   title: string;
   link: string;
 }
+export interface IPortfolio {
+  image: string;
+  label: string;
+  title: string;
+  link: string;
+  category: "deep" | "organize" | "hygiene";
+}
+
 export interface IServiceBox {
   image: string;
   Icon: IconType;
@@ -50,6 +58,17 @@ export interface IServiceBox {
   link: string;
 }
 
+export interface IAboutService {
+  text: string;
+  Icon: IconType;
+  title: string;
+}
+
+export interface IAbouChoose {
+  Icon: any;
+  title: string;
+  text: string;
+}
 export const home_steps: IHomeSteps[] = [
   {
     id: "01",
@@ -169,6 +188,155 @@ export const home_portfolio: IHomePortfolio[] = [
     link: "/freshnest-transforming-living-spaces",
   },
 ];
+export const portfolio: IPortfolio[] = [
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+  {
+    image: "/images/5.jpg",
+    title: "PureShine: Deep Clean Experts",
+    label: "Organized Living",
+    link: "/pureshine-deep-clean-experts",
+    category: "organize",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "deep",
+  },
+  {
+    image: "/images/6.jpg",
+    title: "FreshNest: Transforming Living Spaces",
+    label: "Deep Cleaning",
+    link: "/freshnest-transforming-living-spaces",
+    category: "hygiene",
+  },
+];
 export const home_blog: IHomePortfolio[] = [
   {
     image: "/images/13.jpg",
@@ -232,5 +400,73 @@ export const service_services = [
     Icon: HiOutlineBuildingOffice2,
     link: "/class-polishing",
     image: "/images/service-8.jpg",
+  },
+];
+
+export const about_services: IAboutService[] = [
+  {
+    title: "Reliability",
+    text: "Count on dependable cleaning that keeps your home fresh every day.",
+    Icon: AiOutlineHome,
+  },
+  {
+    title: "Quality",
+    text: "Experience care that turns rooms into beautifully polished spaces.",
+    Icon: AiOutlineHome,
+  },
+  {
+    title: "Trust",
+    text: "Enjoy true peace of mind with services built on honesty and consistency.",
+    Icon: AiOutlineHome,
+  },
+
+  {
+    title: "Efficiency",
+    text: "Save precious time as we deliver spotless results with speed and ease.",
+    Icon: AiOutlineHome,
+  },
+  {
+    title: "Professionalism",
+    text: "Benefit from skilled experts who bring detail, respect, and care to work.",
+    Icon: AiOutlineHome,
+  },
+  {
+    title: "Eco-Friendly",
+    text: "Protect your family and planet through safe, green, and sustainable cleaning.",
+    Icon: AiOutlineHome,
+  },
+];
+
+export const about_choose: IAbouChoose[] = [
+  {
+    Icon: Save,
+    title: "Eco-Friendly",
+    text: "Choose safe cleaning that protects families and supports a healthier planet daily.",
+  },
+  {
+    Icon: Deep,
+    title: "Spotless Cleaning",
+    text: "Enjoy flawless results as every corner shines with precision and dedication.",
+  },
+
+  {
+    Icon: Affordable,
+    title: "Fair Pricing",
+    text: "Get exceptional service designed to deliver real value at honest rates",
+  },
+];
+
+export const about_static = [
+  {
+    text: "450+",
+    label: "Happy Homes Cleaned",
+  },
+  {
+    text: "100%",
+    label: "Satisfaction Guaranteed",
+  },
+  {
+    text: "300+",
+    label: "Loyal Clients Served",
   },
 ];

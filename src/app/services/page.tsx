@@ -7,7 +7,11 @@ import FAQAccordion from "@/components/medium/Accordion";
 function Page() {
   return (
     <main>
-      <First />
+      <First
+        image="/images/service-1.jpg"
+        tag="SERVICES"
+        text="Skilled Home Cleaning Experts"
+      />
       <Services />
       <Banners />
       <FAQ />

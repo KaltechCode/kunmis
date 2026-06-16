@@ -52,15 +52,18 @@ export default function MobileMenu() {
             </li>
 
             <li>
-              <Link href="/about">About Us</Link>
+              <Link href="/about-us">About Us</Link>
             </li>
 
             <li>
               <Link href="/services">Services</Link>
             </li>
+            <li>
+              <Link href="/portfolio">Porfolio</Link>
+            </li>
 
             {/* Pages Dropdown */}
-            <li>
+            {/* <li>
               <button
                 onClick={() => setPagesOpen(!pagesOpen)}
                 className="flex w-full items-center  gap-4"
@@ -95,7 +98,7 @@ export default function MobileMenu() {
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> */}
 
             <li>
               <Link href="/portfolio">Portfolio</Link>

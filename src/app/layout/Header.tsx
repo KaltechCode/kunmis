@@ -30,7 +30,7 @@ function Header() {
           </Link>
 
           <Link
-            href="/about"
+            href="/about-us"
             className="text-lg font-medium text-slate-600 transition-colors hover:text-slate-900"
           >
             About Us
