@@ -6,28 +6,9 @@ import Image from "next/image";
 
 function OurStory() {
   return (
-    <section className="py-[6em] md:py-[6em] lg:py-[6em] bg-background-grey">
+    <section className="py-[3em] md:py-[4em] lg:py-[4em] bg-background-grey">
       <div className="section-container h-full max-w-[1200px]!">
         <div className="grid h-full md:grid-cols-12 lg:gap-7 md:gap-10 lg:gap-20 w-full mx-auto">
-          {/* image */}
-          <div className="relative mt-16 md:mt-0 w-full md:col-span-6 h-full">
-            <Image
-              src={"/images/about-2.webp"}
-              height={500}
-              width={300}
-              className="w-full rounded-medium md:h-full"
-              alt="office cleaning"
-            />
-            <motion.div
-              className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
-              initial={{ scaleY: 1 }}
-              whileInView={{ scaleY: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.9 }}
-              style={{ transformOrigin: "bottom" }}
-            ></motion.div>
-          </div>
-
           {/* section tittle*/}
           <div className="md:col-span-6">
             <motion.p
@@ -91,6 +72,25 @@ function OurStory() {
                 <p>Expert Cleaners</p>
               </div>
             </motion.div>
+          </div>
+
+          {/* image */}
+          <div className="relative mt-16 md:mt-0 w-full md:col-span-6 h-full">
+            <Image
+              src={"/images/about-2.webp"}
+              height={500}
+              width={300}
+              className="w-full rounded-medium md:h-full"
+              alt="office cleaning"
+            />
+            <motion.div
+              className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
+              initial={{ scaleY: 1 }}
+              whileInView={{ scaleY: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9 }}
+              style={{ transformOrigin: "bottom" }}
+            ></motion.div>
           </div>
         </div>
       </div>

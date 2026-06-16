@@ -19,7 +19,7 @@ export default function TeamBox({ image, name, role }: TeamCardProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="group w-full max-w-[380px]">
+    <div className="group w-full max-w-[380px] mx-auto">
       <div className="relative overflow-hidden rounded-medium">
         <Image
           src={image}

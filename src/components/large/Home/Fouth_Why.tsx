@@ -4,6 +4,7 @@ import Iconstars from "@/components/small/icons/Icon_stars";
 import { home_why, IHomeWhy } from "@/static/data";
 import React from "react";
 import { motion } from "framer-motion";
+import HomeWhyBox from "@/components/medium/HomeWhyBox";
 
 function FouthWhy() {
   return (
@@ -56,22 +57,7 @@ function FouthWhy() {
           <div className="mt-16 lg:col-span-6 pt-">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 ">
               {home_why.map((item: IHomeWhy, key: number) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    // style={{ opacity: 0 }}
-                    className="expert-card "
-                    key={key}
-                  >
-                    <div className="expert-card-icon-wrap">
-                      <div className="">
-                        <Icon />
-                      </div>
-                      <h3 className="card-title mt-5!">{item.title}</h3>
-                      <p className=" mt-5">{item.text}</p>
-                    </div>
-                  </div>
-                );
+                return <HomeWhyBox key={key} item={item} />;
               })}
             </div>
           </div>

@@ -5,6 +5,7 @@ import { home_portfolio, IHomePortfolio } from "@/static/data";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import PortfolioBox from "@/components/medium/PortfolioBox";
 
 function Portfolio() {
   return (
@@ -50,38 +51,7 @@ function Portfolio() {
           <div className="">
             <div className="grid gap-10 mt-16 md:grid-cols-2 ">
               {home_portfolio.map((item: IHomePortfolio, key: number) => {
-                return (
-                  <div key={key}>
-                    <Link rel="stylesheet" href={item.link}>
-                      <div className="rounded-medium overflow-hidden relative">
-                        <motion.img
-                          src={item.image}
-                          height={300}
-                          width={300}
-                          className="w-full h-auto"
-                          alt={item.title}
-                          initial={{ scale: 1.3 }}
-                          whileInView={{ scale: 1 }}
-                          whileHover={{ scale: 1.5 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.9, duration: 0.35 }}
-                        />
-                        <motion.div
-                          className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
-                          initial={{ scaleY: 1 }}
-                          whileInView={{ scaleY: 0 }}
-                          transition={{ duration: 0.9 }}
-                          viewport={{ once: true }}
-                          style={{ transformOrigin: "bottom" }}
-                        ></motion.div>
-                      </div>
-                      <div className="">
-                        <p className="mt-2! subtitle block!">{item.label}</p>
-                        <h2 className="card-title mt-2!">{item.title}</h2>
-                      </div>
-                    </Link>
-                  </div>
-                );
+                return <PortfolioBox key={key} item={item} />;
               })}
             </div>
           </div>

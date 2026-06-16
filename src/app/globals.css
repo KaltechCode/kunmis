@@ -171,7 +171,10 @@ h2 {
 p {
   font-family: var(--font-content);
   color: var(--color-content);
-  font-size: var(--paragraph-default);
+  font-size: 15px;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
   @media (max-height: 480px) and (max-width: 960px) and (orientation: landscape) {
     font-size: 18px;
   }
@@ -226,12 +229,18 @@ p {
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 28px;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
   @media (max-height: 480px) and (max-width: 960px) and (orientation: landscape) {
     font-size: 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-size: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 45px;
   }
   @media screen and (min-width: 1500px) {
     font-size: 45px;
@@ -239,6 +248,10 @@ p {
 }
 
 .banner-title {
+  font-size: 32px;
+  @media screen and (min-width: 480px) {
+    font-size: 38px;
+  }
   @media screen and (min-width: 1500px) {
     font-size: 70px;
   }
@@ -246,11 +259,14 @@ p {
 
 .how-it-works-title,
 .card-title {
-  font-size: 22px;
+  font-size: 20px;
   line-height: var(--line-heading);
   margin-bottom: 0px;
   font-weight: 500;
   font-family: var(--font-title);
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 24px;
   }

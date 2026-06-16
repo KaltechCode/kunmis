@@ -30,7 +30,7 @@ function First({
                 {tag}
               </p>
             )}
-            <h2 className="banner-title text-center font-instrument md:w-[100%] lg:w-[100%] mobile-landscape:w-[100%] mx-auto">
+            <h2 className="banner-title text-center font-instrument md:w-[100%] lg:w-[100%] xl:w-[70%] mobile-landscape:w-[100%] mx-auto">
               {text}
             </h2>
           </div>
@@ -41,8 +41,8 @@ function First({
               src={image}
               alt="kunmis services"
               width={1000}
-              height={500}
-              className="w-full md:h-[400px] lg:h-[450px]"
+              height={1000}
+              className="w-full h-[220px] md:h-[400px] lg:h-[450px]"
             />
           </div>
         </div>

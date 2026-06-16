@@ -8,7 +8,7 @@ function Banner() {
       <div
         className="
           relative mx-auto max-w-[1200px] overflow-hidden
-          rounded-[28px]
+          rounded-medium
           bg-[#051a12]
           px-6 py-12
           text-center

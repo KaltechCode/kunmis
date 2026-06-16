@@ -53,7 +53,7 @@ export default function Herosection() {
             >
               <PrimaryBtn
                 text="About Us"
-                link="/about"
+                link="/about-us"
                 size="w-full py-3 sm:px-7 sm:py-4"
               />
               <PrimaryBtnBlack

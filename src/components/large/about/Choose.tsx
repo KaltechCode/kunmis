@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function ChooseUs() {
   return (
-    <section className="min-h-screen py-[6em] md:py-[5em] lg:py-[6em] bg-background-white">
+    <section className="min-h-screen py-[3em] md:py-[4em] lg:py-[5em] bg-background-white">
       <div className="section-container  h-full">
         <div className="flex  flex-col justify-center items-center h-full">
           {/* section tittle*/}

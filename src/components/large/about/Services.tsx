@@ -45,7 +45,7 @@ function AboutServices() {
 
           {/* Boxes */}
           <div className="">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-10 lg:gap-7 mt-15 mx-auto lg:max-w-[1200px] mobile-landscape:min-h-[420px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-4 md:gap-10 lg:gap-7 mt-15 mx-auto lg:max-w-[1200px] mobile-landscape:min-h-[420px]">
               {about_services.map((item: IAboutService, key: number) => {
                 const Icon = item.Icon as IconType;
                 return (
@@ -67,7 +67,7 @@ function AboutServices() {
                       className="flex flex-col mt-5 gap-2.5 home-service-card-content-area font-open leading-[160%]"
                       layout="y"
                     >
-                      <h2>{item.title}</h2>
+                      <h2 className="card-title">{item.title}</h2>
                       <p>{item.text}</p>
                     </motion.div>
                     {/* <div
