@@ -69,6 +69,18 @@ export interface IAbouChoose {
   title: string;
   text: string;
 }
+
+export interface IService {
+  bannerText: string;
+  bannerImage: string;
+  intro: string[];
+  unmatchText: string;
+  unmatchList: string[];
+  unmatchImage: string;
+  howItWorkText: string;
+  howItWorkImage: string;
+}
+
 export const home_steps: IHomeSteps[] = [
   {
     id: "01",
@@ -377,5 +389,46 @@ export const about_static = [
   {
     text: "300+",
     label: "Loyal Clients Served",
+  },
+];
+
+export const serviceDetails: IService[] = [
+  {
+    bannerImage: "/images/kitchen_banner.jpg",
+    bannerText: "Kitchen Cleaning",
+    intro: [
+      "A clean home is essential for a healthy and comfortable lifestyle. Our expert home cleaning services provide a spotless and refreshing environment, allowing you to enjoy a stress-free space without the hassle of cleaning. Whether you need a one-time deep clean or regular maintenance, we have the perfect solution for you. Our general house cleaning includes dusting, vacuuming, mopping, and sanitizing surfaces to maintain a tidy and hygienic home.",
+      "We pay special attention to high-touch areas like door handles, light switches, and countertops, ensuring a germ-free space. For a more intensive clean, our deep cleaning service reaches hidden corners, removing accumulated dust, dirt, and grime. From scrubbing grout lines to degreasing kitchen surfaces and disinfecting bathrooms.",
+      "Clean worktops, appliances, sinks, cupboards, and stovetops to guarantee that your kitchen stays pristine since it requirements special consideration.",
+    ],
+    unmatchText:
+      "To guarantee a comprehensive and hygienic clean, we are using industry-leading cleaning technologies, luxurious items environmentally friendly supplies and professional-grade equipment.",
+    unmatchImage: "/images/kitchen_cleaning.webp",
+    unmatchList: [
+      "We give preference to reliability, productivity, and consistency to guarantee outstanding customer service.",
+      "We show up on time, work diligently, and leave your place spotless because we value your time and commitment.",
+    ],
+    howItWorkImage: "/images/kitchen.jpg",
+    howItWorkText:
+      "We offer hassle-free booking, a customized cleaning plan, and a professional team that ensures every detail is covered. Our quality assurance process guarantees a spotless finish, and we provide ongoing support for your cleaning needs. Whether it’s a one-time deep clean or regular service, we deliver reliability, efficiency, and satisfaction. Book now!",
+  },
+  {
+    bannerImage: "/images/home_banner.jpg",
+    bannerText: "Home Cleaning",
+    intro: [
+      "A clean home is essential for a healthy and comfortable lifestyle. Our expert home cleaning services provide a spotless and refreshing environment, allowing you to enjoy a stress-free space without the hassle of cleaning. Whether you need a one-time deep clean or regular maintenance, we have the perfect solution for you. Our general house cleaning includes dusting, vacuuming, mopping, and sanitizing surfaces to maintain a tidy and hygienic home.",
+      "We pay special attention to high-touch areas like door handles, light switches, and countertops, ensuring a germ-free space. For a more intensive clean, our deep cleaning service reaches hidden corners, removing accumulated dust, dirt, and grime. From scrubbing grout lines to degreasing kitchen surfaces and disinfecting bathrooms.",
+      "Clean worktops, appliances, sinks, cupboards, and stovetops to guarantee that your kitchen stays pristine since it requirements special consideration.",
+    ],
+    unmatchText:
+      "To guarantee a comprehensive and hygienic clean, we are using industry-leading cleaning technologies, luxurious items environmentally friendly supplies and professional-grade equipment.",
+    unmatchImage: "/images/home_cleaning.jgp",
+    unmatchList: [
+      "We give preference to reliability, productivity, and consistency to guarantee outstanding customer service.",
+      "We show up on time, work diligently, and leave your place spotless because we value your time and commitment.",
+    ],
+    howItWorkImage: "/images/home.jpg",
+    howItWorkText:
+      "We offer hassle-free booking, a customized cleaning plan, and a professional team that ensures every detail is covered. Our quality assurance process guarantees a spotless finish, and we provide ongoing support for your cleaning needs. Whether it’s a one-time deep clean or regular service, we deliver reliability, efficiency, and satisfaction. Book now!",
   },
 ];

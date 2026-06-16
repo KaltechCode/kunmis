@@ -7,24 +7,30 @@ function First({
   image,
   tag,
   text,
+  small,
 }: {
   text: string;
-  tag: string;
+  tag?: string;
   image: string;
+  small?: boolean;
 }) {
   return (
-    <section className="h-auto py-[3em] md:py-[5em] lg:py-[4em] ">
+    <section className="h-auto py-[3em] md:py-[3em] lg:py-[4em] ">
       <div className="section-container  h-full">
-        <div className="flex  flex-col justify-center items-center h-full">
+        <div
+          className={`flex  flex-col justify-center items-center h-full ${small && "max-w-[1200px] mx-auto"}`}
+        >
           {/* section tittle*/}
           <div className="">
-            <p className="subtitle">
-              <span>
-                <Iconstars />{" "}
-              </span>
-              {tag}
-            </p>
-            <h2 className="banner-title text-center font-instrument lg:w-[70%] mobile-landscape:w-[60%] mx-auto">
+            {tag && (
+              <p className="subtitle">
+                <span>
+                  <Iconstars />{" "}
+                </span>
+                {tag}
+              </p>
+            )}
+            <h2 className="banner-title text-center font-instrument md:w-[100%] lg:w-[100%] mobile-landscape:w-[100%] mx-auto">
               {text}
             </h2>
           </div>
@@ -35,8 +41,8 @@ function First({
               src={image}
               alt="kunmis services"
               width={1000}
-              height={300}
-              className="w-full h-[400px]"
+              height={500}
+              className="w-full md:h-[400px] lg:h-[450px]"
             />
           </div>
         </div>
