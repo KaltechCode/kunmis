@@ -10,14 +10,14 @@ function StaticSection() {
     <section className="py-[3em] md:py-[5em] lg:py-[4em] bg-title">
       <div className="section-container  h-full">
         <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-10 gap-10 md:gap-7 lg:gap-16 mt-16 mx-auto lg:max-w-[1200px] mobile-landscape:min-h-[420px]">
-          <div className="bg-transparent col-span-1 md:col-span-2 lg:col-span-7">
-            <Image
+          <div className="bg-transparent col-span-1 md:col-span-2 lg:col-span-7 md:h-full bg-[url(/images/about-4.jpg)] bg-no-repeat bg-center object-cover rounded-lg">
+            {/* <Image
               src={"/images/about-4.jpg"}
               height={500}
               width={500}
               className="w-full rounded-medium md:h-full"
               alt="office cleaning"
-            />
+            /> */}
             <motion.div
               className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
               initial={{ scaleY: 1 }}

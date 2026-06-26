@@ -20,44 +20,96 @@ function Contact_form() {
           placeholder="Email Address"
           className="placeholder:text-white font-[15px] py-4 text-white  border-1 border-[#ffffff40] rounded-circle px-5"
         />
-        <select
-          id="service"
-          //   value={service}
-          //   onChange={(e) => setService(e.target.value)}
-          className="placeholder:text-white font-[15px] py-4 text-white  border-1 border-[#ffffff40] rounded-circle px-5 bg-title w-[100%] outline-none transition focus:border-[#ffffff40] focus:ring-2 focus:ring-[#ffffff40]"
-        >
-          <option value="" className="py-3">
-            Choose a Service
-          </option>
-          <option value="Home Cleaning" className="py-3">
-            Home Cleaning
-          </option>
-          <option value="Kitchen Cleaning" className="py-3">
-            Kitchen Cleaning
-          </option>
-          <option value="Toilet Sanitation" className="py-3">
-            Toilet Sanitation
-          </option>
-        </select>
-        <select
-          id="date"
-          //   value={service}
-          //   onChange={(e) => setService(e.target.value)}
-          className="placeholder:text-white font-[15px] py-4 text-white  border-1 border-[#ffffff40] rounded-circle px-5 bg-title w-[100%] outline-none transition focus:border-[#ffffff40] focus:ring-2 focus:ring-[#ffffff40]"
-        >
-          <option value="" className="py-3">
-            Choose Date
-          </option>
-          <option value="1 Week Later" className="py-3">
-            1 Week Later
-          </option>
-          <option value="1-2 Week Later" className="py-3">
-            1-2 Week Later
-          </option>
-          <option value="2 Week Later" className="py-3">
-            2 Week Later
-          </option>
-        </select>
+
+        <div className="relative">
+          <select
+            id="service"
+            //   value={service}
+            //   onChange={(e) => setService(e.target.value)}
+            className="placeholder:text-white font-[15px] py-4 text-white  border-1 border-[#ffffff40] rounded-circle px-4 bg-title w-[100%] outline-none transition focus:border-[#ffffff40] focus:ring-2 focus:ring-[#ffffff40] appearance-none"
+          >
+            <option value="" className="py-3">
+              Choose a Service
+            </option>
+            <option value="Home Cleaning" className="py-3">
+              Home Cleaning
+            </option>
+            <option value="Kitchen Cleaning" className="py-3">
+              Kitchen Cleaning
+            </option>
+            <option value="Toilet Sanitation" className="py-3">
+              Toilet Sanitation
+            </option>
+          </select>
+          <svg
+            className="
+      pointer-events-none
+      absolute
+      right-6
+      top-1/2
+      h-5
+      w-5
+      -translate-y-1/2
+      text-white
+    "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+
+        <div className="relative">
+          <select
+            id="date"
+            //   value={service}
+            //   onChange={(e) => setService(e.target.value)}
+            className="placeholder:text-white font-[15px] py-4 text-white  border-1 border-[#ffffff40] rounded-circle px-5 bg-title w-[100%] outline-none transition focus:border-[#ffffff40] focus:ring-2 focus:ring-[#ffffff40] appearance-none"
+          >
+            <option value="" className="py-3">
+              Choose Date
+            </option>
+            <option value="1 Week Later" className="py-3">
+              1 Week Later
+            </option>
+            <option value="1-2 Week Later" className="py-3">
+              1-2 Week Later
+            </option>
+            <option value="2 Week Later" className="py-3">
+              2 Week Later
+            </option>
+          </select>
+          <svg
+            className="
+      pointer-events-none
+      absolute
+      right-6
+      top-1/2
+      h-5
+      w-5
+      -translate-y-1/2
+      text-white
+    "
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
 
         <input
           type="text"

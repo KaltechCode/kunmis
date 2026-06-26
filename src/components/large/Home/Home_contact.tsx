@@ -32,14 +32,14 @@ function Home_contact() {
 
           {/* image */}
 
-          <div className="w-full lg:h-full relative">
-            <motion.img
+          <div className="w-full lg:h-full relative rounded-medium h-full bg-[url(/images/7.jpg)] bg-right">
+            {/* <motion.img
               src={"/images/7.jpg"}
               height={500}
               width={300}
               className="w-full rounded-medium lg:h-full"
               alt="office cleaning"
-            />
+            /> */}
             <motion.div
               className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
               initial={{ scaleY: 1 }}

@@ -2,10 +2,16 @@
 import PrimaryBtnBlack from "@/components/small/buttons/PrimaryBtnBlack";
 import Iconstars from "@/components/small/icons/Icon_stars";
 import { home_why, IHomeWhy } from "@/static/data";
-import React from "react";
-import { motion } from "framer-motion";
-import HomeWhyBox from "@/components/medium/HomeWhyBox";
+import { motion } from "motion/react";
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 1 } },
+};
+const items = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 function FouthWhy() {
   return (
     <section className="py-[6em] md:py-[6em] lg:py-[6em] bg-background-white">
@@ -55,11 +61,27 @@ function FouthWhy() {
 
           {/* boses */}
           <div className="mt-16 lg:col-span-6 pt-">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 ">
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-2 gap-7 "
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+            >
               {home_why.map((item: IHomeWhy, key: number) => {
-                return <HomeWhyBox key={key} item={item} />;
+                const Icon = item.icon;
+                return (
+                  <motion.div className="expert-card" variants={items}>
+                    <div className="expert-card-icon-wrap">
+                      <div className="">
+                        <Icon />
+                      </div>
+                      <h3 className="card-title mt-5!">{item.title}</h3>
+                      <p className=" mt-5">{item.text}</p>
+                    </div>
+                  </motion.div>
+                );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

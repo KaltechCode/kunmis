@@ -40,14 +40,14 @@ function ChooseUs() {
 
           {/* Boxes */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-7 lg:gap-16 mt-16 mx-auto lg:max-w-[1200px] mobile-landscape:min-h-[420px]">
-            <div className="bg-background-white col-span-1">
-              <Image
+            <div className="bg-background-white col-span-1 bg-[url(/images/about-3.webp)] bg-no-repeat  w-full h-[250px] sm:h-[300px] bg-center md:h-full bg-cover rounded-lg">
+              {/* <Image
                 src={"/images/about-3.webp"}
                 height={500}
                 width={300}
                 className="w-full rounded-medium md:h-full"
                 alt="office cleaning"
-              />
+              /> */}
               <motion.div
                 className="h-full w-full bg-background-grey left-0 top-0 absolute z-90"
                 initial={{ scaleY: 1 }}
